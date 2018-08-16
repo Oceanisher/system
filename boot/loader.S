@@ -1,7 +1,7 @@
 ;内核加载程序-loader
 ;-------------------------------------------------------------
 %include "boot.inc"
-section loader LOADER_BASE_ADDRESS
+section loader vstart=LOADER_BASE_ADDRESS
 
 mov byte [gs:0x00],'2'
 mov byte [gs:0x01],0xA4
